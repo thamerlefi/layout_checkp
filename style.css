@@ -1,0 +1,425 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* -------------------------------------------- navbar ------------------------------------------------- */
+.bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 68px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px -2px rgb(184, 181, 181);
+}
+
+.logo {
+    width: 268px;
+    height: 33px;
+}
+
+.main-menu{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-menu li {
+    list-style: none;
+}
+
+.main{
+    color: #00b39b;
+}
+
+.second{
+    color: #ababab;
+}
+
+.second:hover{
+    color: #00b39b;
+}
+
+.main, .second{
+    text-decoration: none;
+}
+
+.drop{
+    position: relative;
+}
+
+
+
+.drop-cont{
+    position: absolute;
+    display: none;
+    min-width: 220px;
+    box-shadow: 0 5px 10px 0 #d3cfc9;
+    z-index: 2;
+    background-color: #fff;
+    padding-top: 10px;
+    margin-left: -100px;
+}
+
+.lili:hover .drop-cont{
+    display: block;
+    transition: 0.8s;
+}
+
+.drop-cont li:hover a{
+    background-color: #f3f0ee;
+    color: #00b39b;
+    transition: 0.3s;
+}
+
+.drop-cont li a{
+    text-decoration: none;
+    color: #ababab;
+    padding: 10px 0 10px 10px;
+    display: block;
+}
+
+/* ---------------------------------------------- lead section ------------------------------------------------ */
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #747474;
+}
+
+.lead{
+    margin-top: 100px;
+    z-index: 1;
+}
+
+.lead-logo{
+    display: block;
+    margin: 30px auto;
+}
+
+.lead h1{
+    text-align: center;
+    font-family: Work Sans,Arial,sans-serif;
+    font-weight: 300;
+    color: #00b39b;
+    letter-spacing: 3px;
+    margin-top: 40px;
+}
+
+.grid{
+    display: flex;
+    justify-content: space-around;
+    max-width: 75%;
+    margin: auto;
+}
+.col-2{
+    max-width: 500px;
+    margin-top: 60px;
+    padding-left: 25px;
+}
+.col-2 p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+/* ----------------------------------------- services ------------------------------------- */
+
+.services{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px auto 0;
+    width: 75%;
+    flex-wrap: nowrap;
+}
+
+.col{
+    width: 310px; 
+    height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;          
+}
+
+.col-3{
+    background: #00ccb1;
+}
+.col-4{
+    background: #3d83df;
+}
+.col-5{
+    background: #1b2734;
+}
+
+.col div{
+    width: 80%;
+    margin: auto;
+}
+
+.col div h1{
+    font-size: 26px;
+    font-weight: 400;
+    color: #ffff;
+    line-height: 34px;
+}
+
+.col div h2{
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.select {
+    border: none;
+    background-color: transparent;
+    color: #ffff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    outline: 0;
+    text-decoration: underline;
+    cursor: pointer;
+    text-transform: none;
+}
+
+.select option{
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: #333;
+}
+.special{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ------------------------------------------------- brand ----------------------------------------------- */
+
+.brand{
+    width: 73%;
+    padding: 40px 0px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.brand h1{
+    color: #00b39b;
+    font-size: 25px;
+    font-weight: 300;
+    padding-right: 80px;
+}
+
+svg path{
+    color: red;
+}
+
+
+.br-logo a img{
+    opacity: 0.7;
+    filter: grayscale(150%);
+}
+
+.br-logo a img:hover{
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+.br-logo{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
+    row-gap: 28px;
+}
+
+.child4{
+    grid-column: 4/6;
+}
+.child8{
+    margin-top: -20px;
+}
+
+/* ------------------------------------------ stats --------------------------------------------- */
+
+.stats{
+    display: flex;
+    justify-content: space-between;
+    height: 630px;
+    background: #e5faf8;
+    background-image: linear-gradient(-45deg,rgba(0,204,177,.01) 5%,rgba(61,199,223,.1));
+}
+
+.st-log{
+    position: relative;
+    overflow: hidden;
+    padding-left: 200px;
+    padding-top: 50px;
+}
+
+.st-log h1{
+    font-size: 2.125rem;
+    color: #00b39b;
+    font-weight: 300;
+    /* padding: 60px; */
+    width: 300px;
+}
+.st-log p{
+    margin-top: 30px;
+    width: 450px;
+    font-size: 15px;
+}
+
+.st-log::after{
+    content: "";
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    width: 456px;
+    height: 435px;
+    pointer-events: none;
+    background-image: url(logo/logo.png);
+    
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 200px;
+    margin-top: 5px;
+}
+
+.card{
+    width: 230px;
+    height: 240px;
+    background-color: #fff;
+    margin: 20px 10px;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
+    border-radius: 7px;
+    text-align: center;
+    padding-top: 20px;
+}
+.card h3{
+    font-weight: 350;
+    font-size: 25px;
+    margin: 5px 15px;
+    color:#00ccb1;
+}
+.card p{
+    font-size: 13.5px;
+}
+
+.spc{
+    margin-top: 30px;
+}
+
+/* ---------------------------------------- office ---------------------------------- */
+
+.office{
+    text-align: center;
+    padding-top: 80px;
+}
+.office h1{
+    color: #00b39b;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.slide{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    width: 70%;
+    margin: 80px auto 0;
+}
+
+.fig{
+    max-width: 320px;
+    height: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.fig:hover{
+    box-shadow: 1px 3px 4px 0px rgb(143, 140, 140, 70%);
+}
+.fig img{
+    display: block;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 10px;
+}
+a{
+    text-decoration: none;
+    color: #747474;
+}
+
+span{
+    color: #fff;
+    background-color: #3d83df;
+    padding: 7px 15px;
+    font-size: 12px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+span:hover{
+    background-color: #1662c6;
+}
+
+/* ------------------------------------- join us --------------------------------- */
+
+.join-us{
+    text-align: center;
+    margin: 100px 0;
+}
+
+.join-us h1{
+    color: #333;
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.join-us a{
+    color: #fff;
+    background-color: #3d83df;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 7px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.join-us a:hover{
+    background-color: #1662c6;
+}
+
+/* -----------------------------------------------footer ------------------------------------------- */
+
+footer{
+    text-align: center;
+    font-size: 13px;
+    padding: 15px 0;
+}
+
+footer a{
+    color: #1662c6;
+}
+footer a:hover{
+    border-bottom: 1px solid #1662c6;
+}
+footer p{
+    margin-top: 15px;
+}
