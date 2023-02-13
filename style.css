@@ -180,11 +180,20 @@ body{
 .col-3{
     background: #00ccb1;
 }
+.col-3:hover{
+    background: #03d6ba;
+}
 .col-4{
     background: #3d83df;
 }
+.col-4:hover{
+    background: #4489e4;
+}
 .col-5{
     background: #1b2734;
+}
+.col-5:hover{
+    background: #223242;
 }
 
 .col div{
@@ -466,7 +475,7 @@ body{
         margin: 10px auto;
     }
     .logo{
-        width: 200px;
+        width: 150px;
     }
     
 }
@@ -499,7 +508,7 @@ body{
     overflow: hidden;
 }
 .fig:hover{
-    box-shadow: 1px 3px 4px 0px rgb(143, 140, 140, 70%);
+    box-shadow: 5px 10px 13px #e2e1e1;
 }
 .fig img{
     display: block;
@@ -552,6 +561,9 @@ span:hover{
         grid-template-columns: 1fr;
     }
     .fig{margin: auto;}
+    footer div{
+        margin: 2px 10px;
+    }
 }
 
 /* ------------------------------------- join us --------------------------------- */
